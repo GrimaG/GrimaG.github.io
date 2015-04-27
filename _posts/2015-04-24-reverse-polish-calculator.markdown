@@ -11,3 +11,9 @@ The project collaborates with learning in the discipline by means of weekly work
 ______________________________________________
 
 Este trabalho é sobre uma calculadora polonesa reversa que pode ser encontrado na pasta do [GitHub](https://github.com/GrimaG/GrimaG.github.io/tree/master/Calculator) também contém o [diagrama de classes](https://github.com/GrimaG/GrimaG.github.io/blob/master/Calculator/ClassDiagram%20Calculadora%20polonesa%20reversa.asta) do projeto e o diagrama de [caso de uso](https://github.com/GrimaG/GrimaG.github.io/blob/master/Calculator/UseCase%20Calculadora%20polonesa%20reversa.asta). A calculadora foi modelada e organizada de acordo com o padrão MVC. Não foi encontrado modelo como um exemplo para fazer a interface diagrama no software, então eu não poderia acrescentar. O projeto colabora com a aprendizagem na disciplina por meio do trabalho semanal, portanto, não é projetado para o usuário final. Contacte-me enviando um e-mail para: gustavo.gcampello@gmail.com
+
+
+
+
+
+<img src="https://scontent-gru.xx.fbcdn.net/hphotos-xpa1/t31.0-8/10661650_10206271239610854_2371706597610928670_o.jpg" alt="Smiley face" height="42" width="42">
