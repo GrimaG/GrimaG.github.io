@@ -16,4 +16,6 @@ Este trabalho é sobre uma calculadora polonesa reversa que pode ser encontrado 
 
 
 
-<img src="https://scontent-gru.xx.fbcdn.net/hphotos-xpa1/t31.0-8/10661650_10206271239610854_2371706597610928670_o.jpg" alt="Smiley face" height="42" width="42">
+<img src="https://scontent-gru.xx.fbcdn.net/hphotos-xpa1/t31.0-8/10661650_10206271239610854_2371706597610928670_o.jpg" alt="UseCase" height="42" width="42">
+
+<img src="https://scontent-gru.xx.fbcdn.net/hphotos-xta1/t31.0-8/11129808_10206271239530852_8771264344791660002_o.jpg" alt="Class Diagram" height="42" width="42">
