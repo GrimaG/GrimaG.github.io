@@ -12,6 +12,6 @@ ____________________________________________________________________________
 
 
 
-Esta versão contém uma evolução para Reverse Polish Calculator. Agora ele pode resolver expressões normais com um nível de parênteses (A + B) * C e pode resolver por prioridade operador. o projeto foi feito com maven para evitar incompatibilidade e está aberto a [download] (https://github.com/GrimaG/GrimaG.github.io/tree/master/Calculator).
+Esta versão contém uma evolução para Reverse Polish Calculator. Agora ele pode resolver expressões normais com um nível de parênteses (A + B) * C e pode resolver por prioridade operador. o projeto foi feito com maven para evitar incompatibilidade e está aberto a [download](https://github.com/GrimaG/GrimaG.github.io/tree/master/Calculator).
 
 Para resolver foi criado uma nova classe chamada de parse que recebendo uma expressão normal e com a saída é uma expressão inversa polonesa, ela foi anexada ao Controlador e o seu resultado é enviado para a antiga calculadora.
