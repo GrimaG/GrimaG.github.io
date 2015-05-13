@@ -9,10 +9,10 @@ package br.edu.ifes.poo2.fabricanavios;
  *
  * @author Gustavo
  */
-public class FabricaEscuna extends FactoryNavioPessoa {
+public class FabricaCarga extends FactoryNavioCarga{
 
     @Override
-    Navio criarNavio(int qtdPessoas) {
+    public Navio criarNavio(int qtdPessoa, int QtdCarga) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     

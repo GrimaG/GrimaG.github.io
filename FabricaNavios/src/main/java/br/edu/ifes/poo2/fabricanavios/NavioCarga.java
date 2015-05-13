@@ -9,6 +9,6 @@ package br.edu.ifes.poo2.fabricanavios;
  *
  * @author Gustavo
  */
-public class NavioCarga {
-    int qtdPessoas, qtdCarga;
+public abstract class NavioCarga implements Navio {
+    private int qtdMaxPessoas, qtdMaxCarga;
 }

@@ -5,15 +5,15 @@
  */
 package br.edu.ifes.poo2.fabricanavios;
 
-import br.edu.ifes.poo2.fabricanavios.AbsNavioCarga;
-
 /**
  *
  * @author Gustavo
  */
-public class FabricaGraneleiro extends AbsNavioCarga{
-    
-    public Navio criarNavio(int qtdCarga, int qtdPessoas) {
+public class FabricaGraneleiro extends FactoryNavioCarga {
+
+    @Override
+    public Navio criarNavio(int qtdPessoa, int QtdCarga) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
+    
 }

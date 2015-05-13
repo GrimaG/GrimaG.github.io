@@ -9,11 +9,6 @@ package br.edu.ifes.poo2.fabricanavios;
  *
  * @author Gustavo
  */
-public class FabricaEscuna extends FactoryNavioPessoa {
-
-    @Override
-    Navio criarNavio(int qtdPessoas) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+public interface Navio {
     
 }
