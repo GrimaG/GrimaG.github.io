@@ -1,6 +1,6 @@
 ---
 published: true
-title: shurupita
+title: Design patterns: Factory and Abstract Factory
 layout: post
 ---
 shiriu
