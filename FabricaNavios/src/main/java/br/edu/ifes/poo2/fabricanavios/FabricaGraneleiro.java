@@ -13,7 +13,9 @@ public class FabricaGraneleiro extends FactoryNavioCarga {
 
     @Override
     public Navio criarNavio(int qtdPessoa, int QtdCarga) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        Navio navio;
+        navio = new Graneleiro();
+        return navio;
     }
     
 }

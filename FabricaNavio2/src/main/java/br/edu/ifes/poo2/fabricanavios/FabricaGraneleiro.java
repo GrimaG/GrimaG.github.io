@@ -5,15 +5,23 @@
  */
 package br.edu.ifes.poo2.fabricanavios;
 
-import br.edu.ifes.poo2.fabricanavios.AbsNavioCarga;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
  * @author Gustavo
  */
-public class FabricaGraneleiro extends AbsNavioCarga{
-    
-    public Navio criarNavio(int qtdCarga, int qtdPessoas) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+public class FabricaGraneleiro extends AbstractFabricaNavio {
+       Ship navio= new Ship();
+    @Override
+    public Ship criarNavio(int pessoa, int carga) {
+        Tipos.GRANELEIRO.setVal(carga, pessoa);// o moodle fora do ar nao consigo ver quanto é o lmite max D:
+        this.navio.tipo=Tipos.GRANELEIRO;
+        this.navio.setQtd(pessoa, carga);
+        return navio;
     }
+
+    
+    
 }

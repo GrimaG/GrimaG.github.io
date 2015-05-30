@@ -5,10 +5,18 @@
  */
 package br.edu.ifes.poo2.fabricanavios;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  *
  * @author Gustavo
  */
 public abstract class AbstractNavio implements Navio{
+    int pessoas;
+    int carga;
+    Tipos tipo;
     
+   
+    public abstract void setQtd(int pessoas, int carga);
 }

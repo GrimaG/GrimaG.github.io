@@ -10,8 +10,22 @@ package br.edu.ifes.poo2.fabricanavios;
  * @author Gustavo
  */
 public class FabricaNavio {
-    Navio criarNavio(String navio){//é pra implementar esse metodo?
-        return null;
+    Navio criarNavio(String navio, int pessoas, int carga){//é pra implementar esse metodo?
+       Navio ship = null;
+       switch (navio){
+               case "Cruzeiro":
+                   ship = new FabricaCruzeiro().criarNavio(pessoas);
+               
+               case "Escuna":
+                   ship = new FabricaEscuna().criarNavio(pessoas);
+               
+               case "Graneleiro":
+                   ship= new FabricaGraneleiro().criarNavio(pessoas, carga);
+               
+               case "Carga":
+                   ship= new FabricaCarga().criarNavio(pessoas, carga);
+        
     }
-    
+        return ship;
+    }
 }

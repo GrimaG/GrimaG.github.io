@@ -9,6 +9,6 @@ package br.edu.ifes.poo2.fabricanavios;
  *
  * @author Gustavo
  */
-public class NavioCarga {
-    int qtdPessoas, qtdCarga;
+public interface IntFabricaNavio extends Cloneable{
+    abstract AbstractFabricaNavio clone();
 }

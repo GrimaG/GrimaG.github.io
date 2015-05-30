@@ -9,6 +9,13 @@ package br.edu.ifes.poo2.fabricanavios;
  *
  * @author Gustavo
  */
-public class NavioCruzeiro extends NavioPassageiro{
+public enum Tipos {
+    CRUZEIRO, CARGA, ESCUNA, GRANELEIRO;
+    int maxPessoa;
+    int maxCarga;
     
+    public synchronized  void setVal(int carga, int pessoa){
+        maxPessoa = pessoa;
+        maxCarga = carga;
+    }
 }

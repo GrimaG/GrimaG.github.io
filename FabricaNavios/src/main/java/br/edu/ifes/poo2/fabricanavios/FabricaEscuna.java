@@ -13,7 +13,9 @@ public class FabricaEscuna extends FactoryNavioPessoa {
 
     @Override
     Navio criarNavio(int qtdPessoas) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        Navio navio;
+        navio = new Escuna();
+        return navio;
     }
     
 }
