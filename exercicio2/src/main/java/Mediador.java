@@ -3,7 +3,7 @@ import java.util.Observable;
 
 
 
-public class Mediador extends Observable {
+public class Mediador  {
 
 	private ArrayList<Sensor> sensoresInternos = new ArrayList<Sensor>(); 
 	private ArrayList<Sensor> sensoresExternos= new ArrayList<Sensor>();;
