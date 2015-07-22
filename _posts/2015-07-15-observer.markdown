@@ -1,8 +1,8 @@
 ---
 published: true
-title: Observer
+title: Mediador
 layout: post
 ---
-O exercicio 2 pedia que implementasse o padrão Observador em um ar condicionado com sensores para controlar a temperatura.
+O exercicio 2 pedia que implementasse o padrão Mediador em um ar condicionado com sensores para controlar a temperatura.
 O projeto [aqui](https://github.com/GrimaG/GrimaG.github.io/tree/master/exercicio2)
 <img src="https://github.com/GrimaG/GrimaG.github.io/blob/master/exercicio2/Class%20Diagram0.png?raw=true" alt="IMAGE" >
