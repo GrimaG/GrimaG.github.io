@@ -1,7 +1,0 @@
----
-published: true
-title: State
-layout: post
----
-Foi resolvido o execicio 2 da lista de exercicio.
-The project is [here]https://github.com/GrimaG/GrimaG.github.io/tree/master/exercicio2)
