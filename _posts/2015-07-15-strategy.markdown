@@ -1,8 +1,0 @@
----
-published: true
-title: Strategy
-layout: post
----
-Foi resolvido o exercicio 4 da lista de exercicios utilizando o padrão estratégia.
-The project is [here](https://github.com/GrimaG/GrimaG.github.io/tree/master/IR-4)
-<img src="https://github.com/GrimaG/GrimaG.github.io/blob/master/IR-4/Class%20Diagram0.png?raw=true" alt="IMAGE" >
