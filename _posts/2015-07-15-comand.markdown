@@ -1,9 +1,0 @@
----
-published: true
-title: Comand
-layout: post
----
-Solução do exercício 3 da lista passada pelo professor que pede que seja implementado o padrão de projeto comando em um controle remoto para abrir carro ou portão.
-
-O [Projeto](https://github.com/GrimaG/GrimaG.github.io/tree/master/Comando3)
-<img src="https://github.com/GrimaG/GrimaG.github.io/blob/master/Comando3/Class%20Diagram0.png?raw=true" alt="IMAGE" >
