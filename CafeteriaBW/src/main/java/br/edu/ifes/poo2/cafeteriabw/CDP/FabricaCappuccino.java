@@ -5,6 +5,8 @@
  */
 package br.edu.ifes.poo2.cafeteriabw.CDP;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Gustavo
@@ -12,39 +14,34 @@ package br.edu.ifes.poo2.cafeteriabw.CDP;
 public class FabricaCappuccino extends AbstractFactoryCafe {
 
     @Override
-    public Cafe criarCafe(Dia dia) {
-        Cafe cafe = new Cafe();
-        Ingredientes ingrediente;
-        if (dia== Dia.SEGUNDA || dia== Dia.QUARTA || dia== Dia.SEXTA )
-            cafe.setValor(5/2);
-        else cafe.setValor(5);
-        cafe.setTipoDeCafe("Cafe Cappuccino");
-        ingrediente = Ingredientes.CAFESOLUVEL;
-        ingrediente.setQuantidade("100g");
-        cafe.setIngredientes(ingrediente);
-        
-        ingrediente = Ingredientes.ACUCAR;
-        ingrediente.setQuantidade("200g");
-        cafe.setIngredientes(ingrediente);
-        
-        ingrediente = Ingredientes.LEITEPO;
-        ingrediente.setQuantidade("100 ml");
-        cafe.setIngredientes(ingrediente);
-        
-        ingrediente = Ingredientes.CANELA;
-        ingrediente.setQuantidade("1g");
-        cafe.setIngredientes(ingrediente);
-        
-         ingrediente = Ingredientes.CANELA;
-        ingrediente.setQuantidade("1g");
-        cafe.setIngredientes(ingrediente);
-        
-         ingrediente = Ingredientes.AGUA;
-        ingrediente.setQuantidade("100 ml");
-        cafe.setIngredientes(ingrediente);
-        
-        return cafe;
-        
+    public String criarNome() {
+        return "Cafe Cappuccino";
     }
-    
+
+    @Override
+    public float criarPreco(Dia dia) {
+        if (dia == Dia.SEGUNDA || dia == Dia.QUARTA || dia == Dia.SEXTA) {
+            return 5 / 2;
+        } else {
+            return 5;
+        }
+    }
+
+    @Override
+    public ArrayList<Ingredientes> criarIngredientes() {
+        ArrayList<Ingredientes> ingredientes = new ArrayList<Ingredientes>();
+        
+        FabricaIngredientes ingrediente = new FabricaIngredientes();
+        
+        
+        
+        ingredientes.add(ingrediente.prepararIngrediente("CAFESOLUVEL","100g"));
+        ingredientes.add(ingrediente.prepararIngrediente("ACUCAR","200g"));
+        ingredientes.add(ingrediente.prepararIngrediente("LEITEPO","100g"));
+        ingredientes.add(ingrediente.prepararIngrediente("CANELA","1g"));
+        ingredientes.add(ingrediente.prepararIngrediente("AGUA","100 ml"));
+
+        return ingredientes;
+    }
+
 }

@@ -10,9 +10,18 @@ package br.edu.ifes.poo2.cafeteriabw.CDP;
  * @author Gustavo
  */
 public class FabricaCafe {
-
+    private static FabricaCafe fabricaCafe;
+    
+    public synchronized  static  FabricaCafe getInstance(){
+        if (fabricaCafe == null){
+            fabricaCafe = new FabricaCafe();
+        }
+        
+        return fabricaCafe;
+    }
     public Cafe fazerCafe(String tipo, Dia dia) throws Exception {
-        AbstractFactoryCafe fabrica = null;
+         AbstractFactoryCafe fabrica = null;
+         Cafe cafe = new Cafe();
         if (tipo.equals("normal")) {
             fabrica = new FabricaCafeNormal();
         }
@@ -25,7 +34,10 @@ public class FabricaCafe {
             fabrica = new FabricaCappuccino();
         }
         if (fabrica != null) {
-            return fabrica.criarCafe(dia);
+            cafe.setTipoDeCafe(fabrica.criarNome());
+            cafe.setIngredientes(fabrica.criarIngredientes());
+            cafe.setValor(fabrica.criarPreco(dia));
+            return cafe;
         } else {
             throw new Exception("café invalido");
         }

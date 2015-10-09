@@ -27,7 +27,7 @@ public class Cafe {
     public void getInformacao() {
         System.out.println(tipoDeCafe+ " = RS "+ getValor());
         for (Ingredientes ingrediente: ingredientes)
-            System.out.println(ingrediente.name()+ " qtd = "+ ingrediente.getQuantidade());
+            System.out.println(ingrediente.getNome()+ " qtd = "+ ingrediente.getQuantidade());
     }
 
     public void setIngredientes(ArrayList<Ingredientes> ingredientes) {

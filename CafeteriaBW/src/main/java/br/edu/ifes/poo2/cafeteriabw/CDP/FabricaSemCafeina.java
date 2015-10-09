@@ -5,6 +5,8 @@
  */
 package br.edu.ifes.poo2.cafeteriabw.CDP;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Gustavo
@@ -12,30 +14,33 @@ package br.edu.ifes.poo2.cafeteriabw.CDP;
 public class FabricaSemCafeina extends AbstractFactoryCafe {
 
     @Override
-    public Cafe criarCafe(Dia dia) {
-        Cafe cafe = new Cafe();
-        Ingredientes ingrediente;
-        if (dia== Dia.SEGUNDA || dia== Dia.QUARTA || dia== Dia.SEXTA )
-            cafe.setValor(3/2);
-        else cafe.setValor(3);
-        cafe.setTipoDeCafe("Cafe Sem Cafeina");
-        ingrediente = Ingredientes.CAFEDESCAFEINADO;
-        ingrediente.setQuantidade("50g");
-        cafe.setIngredientes(ingrediente);
+    public String criarNome() {
+        return "Cafe Sem Cafeina";
+    }
 
-        ingrediente = Ingredientes.ACUCAR;
-        ingrediente.setQuantidade("2 xícaras");
-        cafe.setIngredientes(ingrediente);
+    @Override
+    public float criarPreco(Dia dia) {
+        if (dia == Dia.SEGUNDA || dia == Dia.QUARTA || dia == Dia.SEXTA) {
+            return 3 / 2;
+        } else {
+            return 3;
+        }
+    }
 
-        ingrediente = Ingredientes.LEITE;
-        ingrediente.setQuantidade("100 ml");
-        cafe.setIngredientes(ingrediente);
+    @Override
+    public ArrayList<Ingredientes> criarIngredientes() {
+        ArrayList<Ingredientes> ingredientes = new ArrayList<Ingredientes>();
+        FabricaIngredientes ingrediente = new FabricaIngredientes();
+        
+        
+        
+        ingredientes.add(ingrediente.prepararIngrediente("CAFEDESCAFEINADO","50g"));
+        ingredientes.add(ingrediente.prepararIngrediente("ACUCAR","2 xícaras"));
+        ingredientes.add(ingrediente.prepararIngrediente("LEITE","100 ml"));
+        ingredientes.add(ingrediente.prepararIngrediente("AGUA","100 ml"));
 
-        ingrediente = Ingredientes.AGUA;
-        ingrediente.setQuantidade("100 ml");
-        cafe.setIngredientes(ingrediente);
 
-        return cafe;
+        return ingredientes;
     }
 
 }

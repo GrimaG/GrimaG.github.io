@@ -24,11 +24,11 @@ public class cafeteriaJUnitTest {
     public  void testFabrica(){
         AbstractFactoryCafe fabrica;
         fabrica = new FabricaCafeNormal();
-        assertEquals("Cafe Normal", fabrica.criarCafe(Dia.TERCA).getTipoDeCafe());
+        assertEquals("Cafe Normal", fabrica.criarNome());
         fabrica = new FabricaCappuccino();
-        assertEquals("Cafe Cappuccino", fabrica.criarCafe(Dia.TERCA).getTipoDeCafe());
+        assertEquals("Cafe Cappuccino", fabrica.criarNome());
         fabrica = new FabricaSemCafeina();
-        assertEquals("Cafe Sem Cafeina", fabrica.criarCafe(Dia.TERCA).getTipoDeCafe());
+        assertEquals("Cafe Sem Cafeina", fabrica.criarNome());
     }
     @Test
     public void testFabricaGeral() throws Exception{

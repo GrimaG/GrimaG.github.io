@@ -9,19 +9,21 @@ package br.edu.ifes.poo2.cafeteriabw.CDP;
  *
  * @author Gustavo
  */
-public  enum Ingredientes {
-    CAFESOLUVEL, CAFEDESCAFEINADO,ACUCAR, LEITE, BICARBONATO,CHOCOLATE,CANELA,LEITEPO, AGUA;
-    
-    String quantidade;
+public  class Ingredientes {
+    private String nome;
+    private String quantidade;
 
+    public Ingredientes(String nome, String quantidade) {
+        this.nome = nome;
+        this.quantidade = quantidade;
+    }
+    public String getNome() {
+        return quantidade;
+    }
     public String getQuantidade() {
         return quantidade;
     }
 
-    public void setQuantidade(String quantidade) {
-        this.quantidade = quantidade;
-    }
-    
     
     
 }

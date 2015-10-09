@@ -5,11 +5,15 @@
  */
 package br.edu.ifes.poo2.cafeteriabw.CDP;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Gustavo
  */
 public abstract class AbstractFactoryCafe {
-    public abstract Cafe criarCafe(Dia dia);
+    public abstract String criarNome();
+    public abstract float criarPreco(Dia dia);
+    public abstract ArrayList<Ingredientes> criarIngredientes();
     
 }

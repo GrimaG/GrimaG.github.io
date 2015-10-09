@@ -5,6 +5,8 @@
  */
 package br.edu.ifes.poo2.cafeteriabw.CDP;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Gustavo
@@ -12,30 +14,36 @@ package br.edu.ifes.poo2.cafeteriabw.CDP;
 public class FabricaCafeNormal extends AbstractFactoryCafe{
 
     @Override
-    public Cafe criarCafe(Dia dia) {
-        Cafe cafe = new Cafe();
-        Ingredientes ingrediente;
-        if (dia== Dia.SEGUNDA || dia== Dia.QUARTA || dia== Dia.SEXTA )
-            cafe.setValor(2/2);
-        else cafe.setValor(2);
-        cafe.setTipoDeCafe("Cafe Normal");
-        ingrediente = Ingredientes.CAFESOLUVEL;
-        ingrediente.setQuantidade("50g");
-        cafe.setIngredientes(ingrediente);
+    public  ArrayList<Ingredientes> criarIngredientes() {
+        ArrayList<Ingredientes> ingredientes = new ArrayList<Ingredientes> ();
+        FabricaIngredientes ingrediente = new FabricaIngredientes();
         
-        ingrediente = Ingredientes.ACUCAR;
-        ingrediente.setQuantidade("2 xícaras");
-        cafe.setIngredientes(ingrediente);
         
-        ingrediente = Ingredientes.LEITE;
-        ingrediente.setQuantidade("100 ml");
-        cafe.setIngredientes(ingrediente);
         
-         ingrediente = Ingredientes.AGUA;
-        ingrediente.setQuantidade("100 ml");
-        cafe.setIngredientes(ingrediente);
+        ingredientes.add(ingrediente.prepararIngrediente("CAFESOLUVEL","50g"));
+        ingredientes.add(ingrediente.prepararIngrediente("ACUCAR","2 xícaras"));
+        ingredientes.add(ingrediente.prepararIngrediente("LEITE","100 ml"));
+        ingredientes.add(ingrediente.prepararIngrediente("AGUA","100 ml"));
+
         
-        return cafe;
+        return ingredientes;
             }
+
+    @Override
+    public String criarNome() {
+        return "Cafe Normal";
+    }
+
+
+
+
+    @Override
+    public float criarPreco(Dia dia) {
+        if (dia== Dia.SEGUNDA || dia== Dia.QUARTA || dia== Dia.SEXTA )
+            return 2/2;
+        else return 2;
+    }
+
+
     
 }
