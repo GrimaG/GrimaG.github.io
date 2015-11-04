@@ -12,14 +12,25 @@ import java.util.HashMap;
  * @author Gustavo
  */
 public class FactoryPizza {
-    private static HashMap<String, Builder> construtor = new HashMap<>();   
-    public FactoryPizza(){
+
+    private static HashMap<String, Builder> construtor = new HashMap<>();
+    private static FactoryPizza uniqueInstance;
+
+    public FactoryPizza() {
         construtor.put("Quatro queijos tradicional", new FactoryPizzaQuatroQueijosBuilder());
         construtor.put("Mussarela tradicional", new FactoryPizzaMussarelaBuilder());
         construtor.put("Quatro queijos cone", new FactoryPizzaQuatroQueijosConeBuilder());
         construtor.put("Mussarela cone", new FactoryPizzaMussarelaConeBuilder());
-        
+
     }
+
+    public static synchronized FactoryPizza getInstance() {
+        if (uniqueInstance == null) {
+            uniqueInstance = new FactoryPizza();
+        }
+        return uniqueInstance;
+    }
+
     public static Pizza criarPizza(String nome) {
         Cozinheiro cozinheiro = new Cozinheiro();
         Builder builder = construtor.get(nome);
