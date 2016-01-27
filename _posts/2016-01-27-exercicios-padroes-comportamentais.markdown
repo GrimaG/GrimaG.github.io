@@ -33,4 +33,4 @@ Segue o link dos padroes comportamentais no github: - [Link do Repositório](htt
 
 [Exercicio 8 ](https://github.com/GrimaG/GrimaG.github.io/tree/master/calculadora):
 
-<img src="https://github.com/GrimaG/GrimaG.github.io/blob/master/calculadora/CafeteriaBW.png">
+<img src="https://github.com/GrimaG/GrimaG.github.io/blob/master/calculadora/CafeteriaBW.png?raw=true">
