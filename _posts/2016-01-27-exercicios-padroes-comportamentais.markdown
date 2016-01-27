@@ -25,11 +25,11 @@ Segue o link dos padroes comportamentais no github: - [Link do Repositório](htt
 
 [Exercicio 5 ](https://github.com/GrimaG/GrimaG.github.io/tree/master/mediador_ar):
 
-<img src="">
+<img src="https://github.com/GrimaG/GrimaG.github.io/blob/master/mediador_ar/Class%20Diagram0.png?raw=true">
 
 [Exercicio 7 ](https://github.com/GrimaG/GrimaG.github.io/tree/master/foobarMotor):
 
-<img src="">
+<img src="https://github.com/GrimaG/GrimaG.github.io/blob/master/foobarMotor/Class%20Diagram0.png?raw=true">
 
 [Exercicio 8 ](https://github.com/GrimaG/GrimaG.github.io/tree/master/calculadora):
 
